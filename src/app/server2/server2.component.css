@@ -1,0 +1,33 @@
+.flex{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: auto;
+  height: 100px;
+  width: auto;
+  background-color:lightblue;
+}
+
+.box{
+  margin: auto;
+  height: 300px;
+  width: 800px;
+  border: green solid;
+  background-color:lightgray;
+}
+
+.flex1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  height: 50px;
+  width: auto;
+}
+
+.display{
+  height: 100px;
+  width: auto;
+  background-color:lightblue;
+  border: solid darkblue;
+}

@@ -1,0 +1,14 @@
+<div class="box">
+  <div class ="flex">
+    <button *ngFor="let food of foods" type="button" class="btn btn-primary" (click)="addFood(food)" style="
+position:relative; width: 80px; height: 50px; top: 25px">{{food.foodName}}</button>
+  </div>
+  <div class="display">
+    <div style="position: relative; top: 12px">{{list}}</div>
+    <div style="position: relative; top: 24px">{{canBeCooked}}</div>
+  </div>
+  <div class ="flex1">
+    <button class="btn btn-primary" (click)="cook()" > Cook </button>
+    <button class="btn btn-primary" (click)="reset()"> Reset </button>
+  </div>
+</div>
