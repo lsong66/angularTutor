@@ -1,14 +1,25 @@
 <div class="box">
+  <div class = title>Welcome to the menu !</div>
   <div class ="flex">
-    <button *ngFor="let food of foods" type="button" class="btn btn-primary" (click)="addFood(food)" style="
-position:relative; width: 80px; height: 50px; top: 25px">{{food.foodName}}</button>
+    <button class="buttontype" (click)="addChicken()" >Chicken</button>
+    <button class="buttontype" (click)="addTomato()" >Tomato</button>
+    <button class="buttontype" (click)="addFish()" >Fish</button>
+    <button class="buttontype" (click)="addBeef()" >Beef</button>
+    <button class="buttontype" (click)="addLamb()" >Lamb</button>
+    <button class="buttontype" (click)="addYam()" >Yam</button>
   </div>
   <div class="display">
-    <div style="position: relative; top: 12px">{{list}}</div>
-    <div style="position: relative; top: 24px">{{canBeCooked}}</div>
+    <div class="information">Your Choice :</div>
+      <button *ngIf="chooseChicken" class="buttontype2">Chicken</button>
+      <button *ngIf="chooseTomato" class="buttontype2">Tomato</button>
+      <button *ngIf="chooseFish" class="buttontype2">Fish</button>
+      <button *ngIf="chooseBeef" class="buttontype2">Beef</button>
+      <button *ngIf="chooseLamb" class="buttontype2">Lamb</button>
+      <button *ngIf="chooseYam" class="buttontype2">Yam</button>
   </div>
   <div class ="flex1">
-    <button class="btn btn-primary" (click)="cook()" > Cook </button>
-    <button class="btn btn-primary" (click)="reset()"> Reset </button>
+    <button class="buttontype" (click)="cook()" > Cook </button>
+    <button class="buttontype" (click)="reset()"> Reset </button>
   </div>
+  <div class="result">{{canBeCooked}}</div>
 </div>
